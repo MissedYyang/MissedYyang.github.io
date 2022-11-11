@@ -34,7 +34,7 @@ a:active {
 
 <body>
 <h5>
-  <embed src="allpicture/香香 - 恋歌.mp3" width="352" height="64"></embed>
+  <embed src="allpicture/香香 - 恋歌.mp3" width="352" id="music" height="64"></embed>
 </h5>
 <table width="90%" align="center" cellpadding="1" cellspacing="5">
   <tr>
@@ -126,5 +126,10 @@ a:active {
 <map name="Map5" id="Map5">
   <area shape="rect" coords="" href="linzhuyunv001.html" />
 </map>
+<script type="text/javascript"> 
+    document.addEventListener("WeixinJSBridgeReady", function () {
+    	document.getElementById('music').play();
+	 }, false);
+</script>
 </body>
 </html>
